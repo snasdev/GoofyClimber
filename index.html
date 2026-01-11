@@ -1,178 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changelog</title>
 
-<title>Changelog</title>
-
-<style>
-:root {
-  --blue: #2d6cff;
-  --dark: #141414;
-  --border: #1f3fff;
-  --text: #ffffff;
-  --muted: #9a9a9a;
-}
-
-/* PAGE */
-body {
-  background-color: var(--dark);
-  font-family: Helvetica, Arial, sans-serif;
-  margin: auto;
-  max-width: 700px;
-  padding: 16px;
-  margin-top: 20px;
-  margin-bottom: 80px;
-  border: 2px solid var(--border);
-  border-radius: 12px;
-  color: var(--text);
-}
-
-/* HEADER */
-#ChangeLog {
-  height: clamp(120px, 30vw, 200px);
-  background-image: linear-gradient(to bottom, #3b6cff, #0c1b5f);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-family: 'Comic Sans MS', cursive;
-  font-size: clamp(24px, 6vw, 40px);
-  border-radius: 10px;
-}
-
-/* VERSION BLOCK */
-details {
-  margin-top: 25px;
-  border-radius: 10px;
-  background-color: #1c1c1c;
-  padding: 14px;
-}
-
-details[open] {
-  border: 1px solid var(--border);
-}
-
-summary {
-  cursor: pointer;
-  list-style: none;
-}
-
-summary::-webkit-details-marker {
-  display: none;
-}
-
-.version {
-  font-size: clamp(22px, 5vw, 32px);
-  color: lightblue;
-}
-
-.date {
-  font-size: 14px;
-  color: var(--muted);
-  margin-top: 4px;
-}
-
-/* LIST */
-ul {
-  margin-top: 15px;
-  padding-left: 22px;
-  line-height: 1.7;
-  font-size: clamp(14px, 4vw, 16px);
-}
-
-li {
-  margin-bottom: 6px;
-}
-
-/* COMMENT */
-.cm {
-  color: var(--muted);
-  font-size: clamp(13px, 3.5vw, 14px);
-  margin: -2px 0 14px 0;
-  padding-left: 10px;
-  border-left: 2px solid #333;
-}
-
-/* MOBILE TOUCH FRIENDLY */
-@media (max-width: 480px) {
-  body {
-    border-width: 1px;
-    padding: 14px;
-  }
-
-  details {
-    padding: 12px;
-  }
-}
-</style>
+  <!-- Link external CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div id="ChangeLog">Full list of changelogs</div>
+  <div id="ChangeLog">Full list of changelogs</div>
 
-<details open>
-  <summary>
-    <div class="version">v1.3</div>
-    <div class="date">27/11/2025</div>
-  </summary>
+  <details open>
+    <summary>
+      <div class="version">v1.3</div>
+      <div class="date">27/11/2025</div>
+    </summary>
 
-  <ul>
-    <li>Changed particles on almost every car</li>
-    <div class="cm">Most were the same, now more realistic</div>
+    <ul>
+      <li>Changed particles on almost every car</li>
+      <div class="cm">Most were the same, now more realistic</div>
 
-    <li>Settings UI rework</li>
-    <li>Credits UI rework</li>
-    <li>Ability to delete records</li>
+      <li>Settings UI rework</li>
+      <li>Credits UI rework</li>
+      <li>Ability to delete records</li>
 
-    <li>Fuel percentage size reduced</li>
-    <div class="cm">Feedback was great, size needed tuning</div>
+      <li>Fuel percentage size reduced</li>
+      <div class="cm">Feedback was great, size needed tuning</div>
 
-    <li>Fuel capsule animation</li>
-    <li>Added map landscapes to classic maps</li>
-    <div class="cm">Classic maps only for now</div>
+      <li>Fuel capsule animation</li>
+      <li>Added map landscapes to classic maps</li>
+      <div class="cm">Classic maps only for now</div>
 
-    <li>Fixed sleigh behaving weird in water</li>
-    <li>Fixed boxes giving same cars/skins</li>
-    <li>Fixed “Big Balls” amulet bug</li>
+      <li>Fixed sleigh behaving weird in water</li>
+      <li>Fixed boxes giving same cars/skins</li>
+      <li>Fixed “Big Balls” amulet bug</li>
 
-    <li>Leaderboard UI rework</li>
-    <li>Leaderboard shows logged-in players only</li>
-    <div class="cm">No more unwanted tracking</div>
+      <li>Leaderboard UI rework</li>
+      <li>Leaderboard shows logged-in players only</li>
+      <div class="cm">No more unwanted tracking</div>
 
-    <li>Moved leaderboard button</li>
-    <li>Button animation changes</li>
-    <div class="cm">Color animations fit the goofy style better</div>
+      <li>Moved leaderboard button</li>
+      <li>Button animation changes</li>
+      <div class="cm">Color animations fit the goofy style better</div>
 
-    <li>Fixed coin capsule pressing</li>
-    <li>Added sleigh particles</li>
-    <li>Added level 5 box</li>
+      <li>Fixed coin capsule pressing</li>
+      <li>Added sleigh particles</li>
+      <li>Added level 5 box</li>
 
-    <li>Improved text rendering system</li>
-    <div class="cm">One of the biggest internal upgrades</div>
+      <li>Improved text rendering system</li>
+      <div class="cm">One of the biggest internal upgrades</div>
 
-    <li>Added update progress display</li>
-    <li>Changed box drop chances</li>
+      <li>Added update progress display</li>
+      <li>Changed box drop chances</li>
 
-    <li>Added POPUPS</li>
-    <div class="cm">Personal favorite feature</div>
+      <li>Added POPUPS</li>
+      <div class="cm">Personal favorite feature</div>
 
-    <li>Map sorter improvements</li>
-    <li>Improved rounded corners</li>
+      <li>Map sorter improvements</li>
+      <li>Improved rounded corners</li>
 
-    <li>Added new menu codes</li>
-    <li>Removed respawn</li>
-    <div class="cm">Unfair after leaderboard update</div>
+      <li>Added new menu codes</li>
+      <li>Removed respawn</li>
+      <div class="cm">Unfair after leaderboard update</div>
 
-    <li>Christmas milestones</li>
-    <li>Locked skin variants</li>
-    <div class="cm">Special skins with unique visuals</div>
+      <li>Christmas milestones</li>
+      <li>Locked skin variants</li>
+      <div class="cm">Special skins with unique visuals</div>
 
-    <li>3 new locked Christmas skins</li>
-  </ul>
-</details>
+      <li>3 new locked Christmas skins</li>
+    </ul>
+  </details>
 
 </body>
 </html>
