@@ -1,0 +1,99 @@
+:root {
+  --blue: #2d6cff;
+  --dark: #141414;
+  --border: #1f3fff;
+  --text: #ffffff;
+  --muted: #9a9a9a;
+}
+
+/* ---------- PAGE ---------- */
+body {
+  background-color: var(--dark);
+  font-family: Helvetica, Arial, sans-serif;
+  margin: auto;
+  max-width: 700px;
+  padding: 16px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  color: var(--text);
+}
+
+/* ---------- HEADER ---------- */
+#ChangeLog {
+  height: clamp(120px, 30vw, 200px);
+  background-image: linear-gradient(to bottom, #3b6cff, #0c1b5f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive;
+  font-size: clamp(24px, 6vw, 40px);
+  border-radius: 10px;
+}
+
+/* ---------- VERSION BLOCK ---------- */
+details {
+  margin-top: 25px;
+  border-radius: 10px;
+  background-color: #1c1c1c;
+  padding: 14px;
+}
+
+details[open] {
+  border: 1px solid var(--border);
+}
+
+summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.version {
+  font-size: clamp(22px, 5vw, 32px);
+  color: lightblue;
+}
+
+.date {
+  font-size: 14px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+/* ---------- LIST ---------- */
+ul {
+  margin-top: 15px;
+  padding-left: 22px;
+  line-height: 1.7;
+  font-size: clamp(14px, 4vw, 16px);
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* ---------- COMMENT ---------- */
+.cm {
+  color: var(--muted);
+  font-size: clamp(13px, 3.5vw, 14px);
+  margin: -2px 0 14px 0;
+  padding-left: 10px;
+  border-left: 2px solid #333;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 480px) {
+  body {
+    border-width: 1px;
+    padding: 14px;
+  }
+
+  details {
+    padding: 12px;
+  }
+}
