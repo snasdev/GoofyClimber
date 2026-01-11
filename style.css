@@ -6,6 +6,7 @@
   --muted: #9a9a9a;
 }
 
+/* details style="--border: #ff0000;" */
 /* ---------- PAGE ---------- */
 body {
   background-color: var(--dark);
